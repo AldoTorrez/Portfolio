@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;1,200&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    background-color: #171717;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.container-nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    background-color: black;
+    z-index: 100;
+}
+
+.container-log img{
+    height: 80px;
+}
+.container-section{
+    width: 82%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.container-section ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.container-section ul li{
+    margin: 20px;
+}
+.container-section ul li a:hover{
+    border-bottom: 1px solid skyblue;
+}
+.container-inicio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+}
+.container-inicio h1{
+    font-size: 80px;
+}
+.container-inicio h2{
+    font-size: 50px;
+    background: linear-gradient(to right, rgb(16, 84, 173), rgb(51, 201, 247), rgb(13, 228, 174));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: bold;
+    margin-top: 0px;
+}
+
+.icon_download{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(21, 206, 190);
+    border-radius: 30px;
+    padding: 6px;
+    position: relative;
+    left: -9px;
+}
+
+.shadow__btn{
+    width: 150px;
+    height: 36px;
+    border-radius: 30px;
+    color: whitesmoke;
+    background-color: #171717;
+    border: 1px solid rgb(0, 247, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 2px 5px rgb(0, 255, 221);
+}
+
+/* Codigo css de acerca de mi */
+
+.container-acerca{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.acerca-text{
+    color: rgb(168, 162, 162);
+    width: 50%;
+    line-height: 30px;
+}
+.acerca-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+.container-acerca h2{
+    font-size: 40px;
+}
+.container-acerca-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Codigo css de tecnologias */
+
+.container-tecnologias{
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title-text{
+    text-align: center;
+    font-size: 40px;
+}
+.container-card-tecnologias-find{
+    width: 900px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+}
+.container-card-tecnologias{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tecnologias-image{
+    width: 50px;
+}
+.tecnologias-text{
+    color: rgb(168, 162, 162);
+}
+
+/* Codigo css de proyectos */
+
+.container-proyectos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.proyectos-text{
+    font-size: 40px;
+}
+.container-proyectos-find{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+.container-proyectos-card{
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(36, 34, 34);
+    border-radius: 5px;
+}
+.container-proyectos-card div{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-proyectos-card div button{
+    background-color: rgb(22, 22, 22);
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.proyectos-image{
+    width: 400px;
+    border-radius: 5px;
+}
+
+/* Codigo css de educacíon */
+
+.container-educacion{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.educacion-text{
+    text-align: center;
+    font-size: 40px;
+}
+.container-educacion-find{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.card-educacion{
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-contacto{
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-contacto form{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    left: -200px;
+}
+.container-contacto form input{
+    background-color: rgb(22, 22, 22);
+    border: none;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    color: rgb(214, 212, 212);
+}
+.container-contacto form textarea{
+    width: 340px;
+    height: 190px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+}
+.enviar{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(29, 213, 219);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.container-footer{
+    height: 70px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-footer div{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.container-footer div img{
+    width: 40px;
+}
+.container-footer p{
+    color: #171717;
+    font-size: 12px;
+    margin: 5px;
+}
+.icon-image{
+    position: absolute;
+    right: 100px;
+    width: 500px;
+}
