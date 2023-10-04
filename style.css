@@ -44,9 +44,6 @@ a{
 .container-section ul li{
     margin: 20px;
 }
-.container-section ul li a:hover{
-    border-bottom: 1px solid skyblue;
-}
 .container-inicio{
     height: 100vh;
     display: flex;
