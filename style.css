@@ -8,7 +8,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Barlow', sans-serif;
-    background-color: #171717;
+    background-color: #0b0c0c;
     color: white;
 }
 a{
@@ -30,7 +30,7 @@ a{
     height: 80px;
 }
 .container-section{
-    width: 82%;
+    width: 78%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -40,9 +40,21 @@ a{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .container-section ul li{
     margin: 20px;
+}
+.container-section ul li a{
+    color: #8e96a4;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.container-section ul li a:hover{
+    color: white;
 }
 .container-inicio{
     height: 100vh;
@@ -50,12 +62,17 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(20, 20, 20);
+    /* background-color: rgb(20, 20, 20); */
+    background-image: url('https://static.vecteezy.com/system/resources/previews/024/571/060/large_2x/hooded-hacker-using-computer-in-dark-room-cybercrime-concept-an-anonymous-hooded-hacker-full-rear-view-coding-on-computer-ai-generated-free-photo.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .container-inicio h1{
     font-size: 80px;
+    font-family: Verdana;
 }
 .container-inicio h2{
+    font-family: Verdana, sans-serif;
     font-size: 50px;
     background: linear-gradient(to right, rgb(16, 84, 173), rgb(51, 201, 247), rgb(13, 228, 174));
     background-clip: text;
@@ -91,6 +108,7 @@ a{
 /* Codigo css de acerca de mi */
 
 .container-acerca{
+    background-color: #0b0c0c;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -98,46 +116,63 @@ a{
     justify-content: center;
     align-items: center;
 }
-.acerca-text{
-    color: rgb(168, 162, 162);
-    width: 50%;
-    line-height: 30px;
-}
-.acerca-image{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-}
-.container-acerca h2{
-    font-size: 40px;
-}
-.container-acerca-card{
+
+.container-acerca-my{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 70vh;
+    width: 70rem;
+    border-radius: 5px;
+}
+
+.container-profile{
+    background-color: #141516;
+    width: 20rem;
+    border-radius: 5px;
+}
+
+.profile-photo{
+    width: 20rem;
+    position: relative;
+    top: 130px;
+    border-radius: 5px;
+}
+
+.container-about-me{
+    margin-top: -20px;
+    padding-left: 30px;
+}
+
+.list-about-me{
+    display: flex;
+}
+
+.list-about-me ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.list-about-me ul li{
+    margin-right: 30px;
+    color: #8e96a4;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #8e96a4;
+}
+.list-about-me ul li:hover{
+    color: white;
+    border-bottom: 1px solid white;
 }
 
 /* Codigo css de tecnologias */
-
-.container-tecnologias{
-    background-color: rgb(20, 20, 20);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.title-text{
-    text-align: center;
-    font-size: 40px;
-}
 .container-card-tecnologias-find{
-    width: 900px;
-    height: 350px;
+    margin-top: 5px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-content: center;
+    background-color: #141516;
+    border-radius: 5px;
 }
 .container-card-tecnologias{
     width: 100px;
@@ -148,7 +183,7 @@ a{
     justify-content: center;
 }
 .tecnologias-image{
-    width: 50px;
+    width: 35px;
 }
 .tecnologias-text{
     color: rgb(168, 162, 162);
@@ -228,80 +263,118 @@ a{
     cursor: pointer;
 }
 
+/* Contacto */
 .container-contacto{
-    background-color: rgb(32, 32, 32);
+    background-color: #0b0c0c;
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 200px;
+    position: relative;
+}
+
+.container-contact-me{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container-contact-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-contact-1 a{
+    display: flex;
+    gap: 15px;
     align-items: center;
 }
+
+.container-contact-2{
+    display: flex;
+    gap: 15px;
+}
+
+.contact-image{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 204, 255);
+    border-radius: 20px;
+    padding: 0.5px;
+    display: flex;
+}
+
+.btn-download-cv{
+    all: unset;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 217, 255);
+    box-shadow: 1px 1px 5px rgb(0, 255, 213);
+    cursor: pointer;
+    margin: 20px;
+}
+
+
+.container-contact-me h1{
+    font-size: 50px;
+}
+
 .container-contacto form{
-    width: 300px;
     height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     position: relative;
-    left: -200px;
+    top: 40px;
 }
 .container-contacto form input{
     background-color: rgb(22, 22, 22);
     border: none;
-    width: 300px;
-    height: 30px;
+    width: 400px;
+    height: 25px;
     padding: 10px;
     border-radius: 5px;
     outline: none;
     color: rgb(214, 212, 212);
 }
 .container-contacto form textarea{
-    width: 340px;
-    height: 190px;
+    background-color: rgb(22, 22, 22);
+    color: rgb(214, 212, 212);
+    border: none;
+    width: 400px;
+    height: 170px;
     outline: none;
     border-radius: 5px;
     font-size: 15px;
     padding: 10px;
 }
 .enviar{
-    width: 100px;
-    height: 35px;
-    border: none;
+    all: unset;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
     border-radius: 5px;
-    background-color: rgb(29, 213, 219);
-    color: white;
+    border: 1px solid rgb(0, 217, 255);
+    box-shadow: 1px 1px 5px rgb(0, 255, 213);
     cursor: pointer;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
+    margin: 20px;
 }
-.container-footer{
-    height: 70px;
-    position: relative;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.enviar:hover{
+    background-color: rgb(27, 214, 214);
 }
-.container-footer div{
-    width: 400px;
-    display: flex;
-    justify-content: space-around;
-}
-.container-footer div img{
-    width: 40px;
-}
-.container-footer p{
-    color: #171717;
-    font-size: 12px;
-    margin: 5px;
-}
-.icon-image{
+
+.copyright{
     position: absolute;
-    right: 100px;
-    width: 500px;
+    bottom: 0;
+    color: #9c9b9b;
 }
