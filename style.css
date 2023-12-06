@@ -128,12 +128,13 @@ a{
     background-color: #141516;
     width: 20rem;
     border-radius: 5px;
+    border: 0.1px solid rgb(55, 66, 66);
 }
 
 .profile-photo{
     width: 20rem;
     position: relative;
-    top: 130px;
+    top: 129px;
     border-radius: 5px;
 }
 
@@ -155,7 +156,6 @@ a{
 .list-about-me ul li{
     margin-right: 30px;
     color: #8e96a4;
-    padding: 5px;
     cursor: pointer;
     border-bottom: 1px solid #8e96a4;
 }
@@ -170,20 +170,20 @@ a{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    justify-content: center;
+    gap: 5px;
     background-color: #141516;
+    border: 0.1px solid rgb(55, 66, 66);
     border-radius: 5px;
 }
 .container-card-tecnologias{
-    width: 100px;
-    height: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin: 5px;
 }
 .tecnologias-image{
-    width: 35px;
+    width: 40px;
 }
 .tecnologias-text{
     color: rgb(168, 162, 162);
