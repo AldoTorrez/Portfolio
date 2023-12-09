@@ -10,6 +10,9 @@ body{
     font-family: 'Barlow', sans-serif;
     background-color: #0b0c0c;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 a{
     text-decoration: none;
@@ -56,284 +59,187 @@ a{
 .container-section ul li a:hover{
     color: white;
 }
-.container-inicio{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color: rgb(20, 20, 20); */
-    background-image: url('https://static.vecteezy.com/system/resources/previews/024/571/060/large_2x/hooded-hacker-using-computer-in-dark-room-cybercrime-concept-an-anonymous-hooded-hacker-full-rear-view-coding-on-computer-ai-generated-free-photo.jpg');
-    background-size: cover;
-    background-position: center;
+
+
+/* Acerca de mi */
+.container-about-me{
+    padding-top: 80px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-.container-inicio h1{
-    font-size: 80px;
+.container-about-me-element{
+    width: 800px;
+}
+.container-about-me-element h1{
+    font-size: 50px;
     font-family: Verdana;
 }
-.container-inicio h2{
+.container-about-me-element h2{
     font-family: Verdana, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     background: linear-gradient(to right, rgb(16, 84, 173), rgb(51, 201, 247), rgb(13, 228, 174));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     font-size: bold;
-    margin-top: 0px;
 }
-
-.icon_download{
-    width: 20px;
-    height: 20px;
-    background-color: rgb(21, 206, 190);
-    border-radius: 30px;
-    padding: 6px;
-    position: relative;
-    left: -9px;
+.container-about-me-element p{
+    line-height: 30px;
 }
-
-.shadow__btn{
-    width: 150px;
-    height: 36px;
-    border-radius: 30px;
-    color: whitesmoke;
-    background-color: #171717;
-    border: 1px solid rgb(0, 247, 255);
+.container-about-me-image-profile{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 2px 2px 5px rgb(0, 255, 221);
-}
-
-/* Codigo css de acerca de mi */
-
-.container-acerca{
-    background-color: #0b0c0c;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.container-acerca-my{
+.container-about-me-image-profile img{
+    width: 400px;
+    border-radius: 200px;
+}
+.download-cv a{
+    width: 200px;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-left: 200px;
+    border-radius: 50px;
     display: flex;
-    height: 70vh;
-    width: 70rem;
-    border-radius: 5px;
+    justify-content: center;
+    color: black;
 }
-
-.container-profile{
-    background-color: #141516;
-    width: 20rem;
-    border-radius: 5px;
-    border: 0.1px solid rgb(55, 66, 66);
-}
-
-.profile-photo{
-    width: 20rem;
-    position: relative;
-    top: 129px;
-    border-radius: 5px;
-}
-
-.container-about-me{
-    margin-top: -20px;
-    padding-left: 30px;
-}
-
-.list-about-me{
-    display: flex;
-}
-
-.list-about-me ul{
-    padding: 0;
-    list-style: none;
-    display: flex;
-}
-
-.list-about-me ul li{
-    margin-right: 30px;
-    color: #8e96a4;
-    cursor: pointer;
-    border-bottom: 1px solid #8e96a4;
-}
-.list-about-me ul li:hover{
+.download-cv a:hover{
+    background-color: black;
     color: white;
-    border-bottom: 1px solid white;
+    border: 1px solid rgb(39, 38, 38);
 }
 
 /* Codigo css de tecnologias */
-.container-card-tecnologias-find{
-    margin-top: 5px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
-    background-color: #141516;
-    border: 0.1px solid rgb(55, 66, 66);
-    border-radius: 5px;
+.container-tech{
+    padding-top: 80px;
+    width: 90%;
 }
-.container-card-tecnologias{
+.container-tech-languajes{
     display: flex;
     flex-direction: column;
+}
+.container-tech-languajes-card{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+}
+.container-tech-languajes-card div{
+    background-color: #141516;
+    display: flex;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    margin: 5px;
+    border: 1px solid rgb(32, 34, 34);
+    border-radius: 5px;
 }
-.tecnologias-image{
-    width: 40px;
+.image-languaje{
+    width: 35px;
 }
-.tecnologias-text{
-    color: rgb(168, 162, 162);
-}
+
 
 /* Codigo css de proyectos */
-
-.container-proyectos{
+.image-project{
     width: 100%;
-    height: 100vh;
+    border-radius: 10px;
+}
+
+.container-projects{
+    padding-top: 80px;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
-.proyectos-text{
-    font-size: 40px;
-}
-.container-proyectos-find{
+.container-projects-cards{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
-.container-proyectos-card{
-    width: 400px;
-    height: 250px;
+.container-project-card{
     display: flex;
     flex-direction: column;
-    background-color: rgb(36, 34, 34);
-    border-radius: 5px;
+    background-color: #141516;
+    border: 0.1px solid rgb(39, 37, 37);
+    border-radius: 10px;
 }
-.container-proyectos-card div{
-    height: 100vh;
+.container-card-tech{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.container-card-tech div{
+    background-color: black;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 12px;
+    font-size: 12px;
+}
+.image-languaje-p{
+    width: 20px;
+}
+.text-project{
+    color: #8e96a4;
+    margin: 10px;
+}
+.btn-project{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 10px;
 }
-.container-proyectos-card div button{
-    background-color: rgb(22, 22, 22);
-    color: white;
-    border: none;
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.proyectos-image{
-    width: 400px;
-    border-radius: 5px;
-}
-
-/* Codigo css de educacíon */
-
-.container-educacion{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(20, 20, 20);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.educacion-text{
+.btn-project a{
+    width: 150px;
     text-align: center;
-    font-size: 40px;
-}
-.container-educacion-find{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-}
-.card-educacion{
-    width: 300px;
-    margin-top: 10px;
+    padding: 10px;
     border-radius: 5px;
-    cursor: pointer;
+    border: 1px solid rgb(49, 46, 46);
 }
+.btn-project a:hover{
+    background-color: white;
+    color: black;
+}
+
 
 /* Contacto */
 .container-contacto{
-    background-color: #0b0c0c;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 200px;
-    position: relative;
-}
-
-.container-contact-me{
+    padding-top: 80px;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+}
+.container-contact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
-.container-contact-1{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.container-contact-red{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-
-.container-contact-1 a{
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.container-contact-2{
-    display: flex;
-    gap: 15px;
-}
-
-.contact-image{
-    width: 40px;
-    height: 40px;
-    background-color: rgb(0, 204, 255);
-    border-radius: 20px;
-    padding: 0.5px;
-    display: flex;
-}
-
-.btn-download-cv{
-    all: unset;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 7px;
+.container-contact-red a{
+    width: 100px;
+    height: 100px;
     border-radius: 5px;
-    border: 1px solid rgb(0, 217, 255);
-    box-shadow: 1px 1px 5px rgb(0, 255, 213);
-    cursor: pointer;
-    margin: 20px;
 }
 
-
-.container-contact-me h1{
-    font-size: 50px;
+.image-red{
+    width: 100px;
 }
 
-.container-contacto form{
-    height: 400px;
+.container-contact form{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap: 20px;
     position: relative;
-    top: 40px;
 }
 .container-contacto form input{
     background-color: rgb(22, 22, 22);
@@ -372,9 +278,8 @@ a{
 .enviar:hover{
     background-color: rgb(27, 214, 214);
 }
-
-.copyright{
-    position: absolute;
-    bottom: 0;
-    color: #9c9b9b;
+.hr{
+    background-color: rgb(145, 232, 235);
+    width: 100%;
+    height: 1px;
 }

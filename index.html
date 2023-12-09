@@ -9,7 +9,7 @@
 <body>
     <nav class="container-nav">
         <div class="container-log">
-            <img src="../assets/logo.png" alt="">
+            <img src="./assets/otros/logo.png" alt="logo">
         </div>
         <div class="container-section">
             <ul>              
@@ -20,15 +20,15 @@
                         </svg>   
                         Inicio
                     </a>
-                </li>                           
-                <li><a href="#acerca">
-                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <circle cx="12" cy="8" r="3.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.8475 19.25H17.1525C18.2944 19.25 19.174 18.2681 18.6408 17.2584C17.8563 15.7731 16.068 14 12 14C7.93201 14 6.14367 15.7731 5.35924 17.2584C4.82597 18.2681 5.70558 19.25 6.8475 19.25Z"></path>
-                        </svg>
-                        Acerca
-                    </a>
                 </li>
+                <li><a href="#tecnologias">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <rect width="14.5" height="14.5" x="4.75" y="4.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" rx="2"></rect>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.75 10.75L11.25 13L8.75 15.25"></path>
+                      </svg>                                                    
+                    Tecnologias
+                    </a>
+                </li>                         
                 <li><a href="#proyectos">
                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 17.25V9.75C19.25 8.64543 18.3546 7.75 17.25 7.75H4.75V17.25C4.75 18.3546 5.64543 19.25 6.75 19.25H17.25C18.3546 19.25 19.25 18.3546 19.25 17.25Z"></path>
@@ -51,99 +51,230 @@
         </div>
     </nav>
 
-    <div class="container-inicio" id="inicio">
-        <h1>Hola, soy Aldo Torrez</h1>
-        <h2 id="develop">Full Stack Web Developer</h2>
-        <button class="shadow__btn">
-            <img src="../assets/icon_descargar.png" alt="icon_download" class="icon_download">
-            <a download="CV_Aldo" href="../assets/CV-AldoTorrez.pdf">Descargar CV</a>
-        </button>
+    <div class="container-about-me" id="inicio">
+        <div class="container-about-me-element">
+            <h1>Hola, soy Aldo Torrez</h1>
+            <h2 id="develop">Full Stack Web Developer</h2>
+            <p>Soy un apasionado desarrollador web full-stack con experiencia en la creación de aplicaciones y sitios web. Mi objetivo es combinar mis habilidades técnicas y creativas para desarrollar soluciones digitales innovadoras y funcionales.
+            Tengo un sólido conocimiento en lenguajes de programación como HTML, CSS, JavaScript y frameworks populares como React.js y Node.js. Además, estoy familiarizado con bases de datos como postgreSQL lo que me permite diseñar y administrar eficientemente la capa de almacenamiento de datos de mis proyectos.</p>
+            <br>
+            <div class="download-cv">
+                <a href="./assets/otros/CV-AldoTorrez.pdf" download="CV-Aldo-Torrez">Descargar CV</a>
+            </div>
+        </div>
+        <div class="container-about-me-image-profile">
+            <img src="./assets/otros/aldo_perfil.png" alt="aldo-torrez">
+        </div>
     </div>
 
-    <div class="container-acerca" id="acerca">
-        <div class="container-acerca-my">
-            <div class="container-profile">
-                <img src="../assets/aldo_perfil.png" alt="" class="profile-photo">
-            </div>
-            <div class="container-about-me">
-                <h2>Acerca de mi</h2>
-                <p>Soy un apasionado desarrollador web full-stack con experiencia en la creación de aplicaciones y sitios
-                    web. Mi objetivo es combinar mis habilidades técnicas y creativas para desarrollar soluciones digitales innovadoras y funcionales.
-                    Tengo un sólido conocimiento en lenguajes de programación como HTML, CSS, JavaScript y frameworks populares como React.js y Node.js. Además, estoy familiarizado con bases de datos como postgreSQL lo que me permite diseñar y administrar eficientemente la capa de almacenamiento de datos de mis proyectos.😉
-                </p>
-                <div class="list-about-me">
-                    <ul>
-                        <li>Habilidades</li>
-                        <li>Experiencia</li>
-                        <li>Educacion</li>
-                    </ul>
+    <div class="container-tech" id="tecnologias">
+        <h2>Habilidades</h2>
+        <p>Estos son algunos lenguajes y marcos que conozco y administro.</p>
+        <br>
+        <div class="container-tech-languajes">
+            <p>Lenguajes</p>
+            <div class="container-tech-languajes-card">
+                <div>
+                    <img src="./assets/lenguajes/javascript.png" alt="javascript" class="image-languaje">
+                    <p>JavaScript</p>
                 </div>
                 <div>
-                    <div class="container-card-tecnologias-find"></div>
+                    <img src="./assets/lenguajes/typescript.png" alt="typescript" class="image-languaje">
+                    <p>TypeScript</p>
+                </div>
+                <div>
+                    <img src="./assets/lenguajes/java.png" alt="java" class="image-languaje">
+                    <p>Java</p>
+                </div>
+                <div>
+                    <img src="./assets/lenguajes/python.png" alt="python" class="image-languaje">
+                    <p>Python</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-tech-languajes">
+            <p>Frameworks</p>
+            <div class="container-tech-languajes-card">
+                <div>
+                    <img src="./assets/lenguajes/react.png" alt="react" class="image-languaje">
+                    <p>React</p>
+                </div>
+                <div>
+                    <img src="./assets/lenguajes/redux.png" alt="redux" class=" image-languaje">
+                    <p>Redux</p>
+                </div>
+                <div>
+                    <img src="./assets/lenguajes/angular.png" alt="angular" class="image-languaje">
+                    <p>Angular</p>
+                </div>
+                <div>
+                    <img src="./assets/lenguajes/node.png" alt="node" class="image-languaje">
+                    <p>NodeJS</p>
+                </div>
+                <div>
+                    <img src="./assets/lenguajes/nestjs.png" alt="nestjs" class="image-languaje">
+                    <p>NestJS</p>
+                </div>
+                <div>
+                    <img src="./assets/lenguajes/express.png" alt="express" class="image-languaje">
+                    <p>Express</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-tech-languajes">
+            <p>Data Base</p>
+            <div class="container-tech-languajes-card">
+                <div>
+                    <img src="./assets/lenguajes/postgresql.png" alt="postgresql" class="image-languaje">
+                    <p>PostgreSQL</p>
+                </div>
+                <div>
+                    <img src="./assets/lenguajes/mongodb.png" alt="mongodb" class="image-languaje">
+                    <p>MongoDB</p>
+                </div>
+                <div>
+                    <img src="./assets/lenguajes/mysql.png" alt="mysql" class="image-languaje">
+                    <p>MySQL</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-tech-languajes">
+            <p>Others</p>
+            <div class="container-tech-languajes-card">
+                <div>
+                    <img src="./assets/lenguajes/html.png" alt="html" class="image-languaje">
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <img src="./assets/lenguajes/css.png" alt="css" class="image-languaje">
+                    <p>CSS</p>
+                </div>
+                <div>
+                    <img src="./assets/lenguajes/git.png" alt="git" class="image-languaje">
+                    <p>Git</p>
+                </div>
+                <div>
+                    <img src="./assets/lenguajes/tailwind.png" alt="tailwind" class="image-languaje">
+                    <p>Tailwid</p>
+                </div>
+                <div>
+                    <img src="./assets/lenguajes/sass.png" alt="sass" class="image-languaje">
+                    <p>Sass</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-proyectos" id="proyectos">
-        <h2 class="proyectos-text">Proyectos</h2>
-        <div class="container-proyectos-find">
-            <div class="container-proyectos-card">
-                <img src="../assets/videogame.png" alt="videogame" class="proyectos-image">
-                <div>
-                    <button><a href="https://github.com/AldoTorrez/VideoGames" target="_blank">Codigo</a></button>
-                    <button><a href="https://videogamepi.vercel.app/" target="_blank">Deploy</a></button>
+    <div class="container-projects" id="proyectos">
+        <div>
+            <h2>PROYECTOS</h2>
+            <p>Algunos proyectos personales que he construido.</p>
+        </div>
+        <div class="container-projects-cards">
+            <div class="container-project-card">
+                <img src="./assets/proyectos/videogame.png" alt="videogame" class="image-project">
+                <div class="container-card-tech">
+                    <div>
+                        <img src="./assets/lenguajes/react.png" alt="react" class="image-languaje-p">
+                        <p>React</p>
+                    </div>
+                    <div>
+                        <img src="./assets/lenguajes/node.png" alt="node" class=" image-languaje-p">
+                        <p>NodeJS</p>
+                    </div>
+                    <div>
+                        <img src="./assets/lenguajes/postgresql.png" alt="postgresql" class=" image-languaje-p">
+                        <p>PostgreSQL</p>
+                    </div>
+                </div>
+                <p class="text-project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis mollitia, molestias ex consequatur facilis voluptates laborum. Cum nulla, beatae corporis error repellat esse, sequi magni cupiditate, totam aspernatur labore.</p>
+                <div class="btn-project">
+                    <a href="https://github.com/AldoTorrez/VideoGames" target="_blank">Codigo</a>
+                    <a href="https://videogamepi.vercel.app/" target="_blank">Deploy</a>
                 </div>
             </div>
-            <div class="container-proyectos-card">
-                <img src="../assets/tecnostore.png" alt="tecnostore" class="proyectos-image">
-                <div>
-                    <button><a href="https://github.com/TomasPino5/Tecno-Store-CS/tree/develop" target="_blank">Codigo</a></button>
-                    <button><a href="https://tecno-store-cs.vercel.app/" target="_blank">Deploy</a></button>
+            <div class="container-project-card">
+                <img src="./assets/proyectos/tecnostore.png" alt="tecnostore" class="image-project">
+                <div class="container-card-tech">
+                    <div>
+                        <img src="./assets/lenguajes/react.png" alt="react" class="image-languaje-p">
+                        <p>React</p>
+                    </div>
+                    <div>
+                        <img src="./assets/lenguajes/node.png" alt="node" class=" image-languaje-p">
+                        <p>NodeJS</p>
+                    </div>
+                    <div>
+                        <img src="./assets/lenguajes/postgresql.png" alt="postgresql" class=" image-languaje-p">
+                        <p>PostgreSQL</p>
+                    </div>
+                </div>
+                <p class="text-project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis mollitia, molestias ex consequatur facilis voluptates laborum. Cum nulla, beatae corporis error repellat esse, sequi magni cupiditate, totam aspernatur labore.</p>
+                <div class="btn-project">
+                    <a href="https://github.com/TomasPino5/Tecno-Store-CS/tree/develop" target="_blank">Codigo</a>
+                    <a href="https://tecno-store-cs.vercel.app/" target="_blank">Deploy</a>
+                </div>
+            </div>
+            <div class="container-project-card">
+                <img src="./assets/proyectos/portafolio.png" alt="portafolio" class="image-project">
+                <div class="container-card-tech">
+                    <div>
+                        <img src="./assets/lenguajes/html.png" alt="html" class="image-languaje-p">
+                        <p>HTML</p>
+                    </div>
+                    <div>
+                        <img src="./assets/lenguajes/css.png" alt="css" class=" image-languaje-p">
+                        <p>CSS</p>
+                    </div>
+                    <div>
+                        <img src="./assets/lenguajes/javascript.png" alt="javascript" class=" image-languaje-p">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <p class="text-project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis mollitia, molestias ex consequatur facilis voluptates laborum. Cum nulla, beatae corporis error repellat esse, sequi magni cupiditate, totam aspernatur labore.</p>
+                <div class="btn-project">
+                    <a href="https://github.com/AldoTorrez/Portfolio" target="_blank">Codigo</a>
+                    <a href="https://portfolio-aldotorrez.vercel.app/" target="_blank">Deploy</a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="container-contacto" id="contacto">
-        <div class="container-contact-me">
-            <h1>Contactame</h1>
-            <div class="container-contact-1">
-                <a href="mailto:adlotorrez91@gmail.com">
-                    <img src="../assets/telegrama.png" alt="mail" class="contact-image">
-                    <p>adlotorrez91@gmail.com</p>
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=+59163701686&text=Hola" target="_blank">
-                    <img src="../assets/whatsapp.png" alt="whatsapp" class="contact-image">
-                    <p>+591 63701686</p>
-                </a>
-            </div>
-            <div class="container-contact-2">
-                <a href="https://www.instagram.com/b4rc0d37/" target="_blank">
-                    <img src="../assets/instagram.png" alt="github"class="contact-image">
-                </a>
-                <a href="https://twitter.com/dmmslslsls" target="_blank">
-                    <img src="../assets/gorjeo.png" alt="linkedin" class="contact-image">
-                </a>
+        <h2>CONTACTAME</h2>
+        <div class="container-contact">
+            <div class="container-contact-red">
                 <a href="https://www.linkedin.com/in/aldo-torrez/" target="_blank">
-                    <img src="../assets/linkedin.png" alt="linkedin" class="contact-image">
+                    <img src="./assets/redes/linkedin.png" alt="linkedin" class="image-red">
                 </a>
                 <a href="https://github.com/AldoTorrez" target="_blank">
-                    <img src="../assets/github.png" alt="github" class="contact-image">
+                    <img src="./assets/redes/github.png" alt="github" class="image-red">
+                </a>
+                <a href="mailto:adlotorrez91@gmail.com" target="_blank">
+                    <img src="./assets/redes/gmail.png" alt="gmail" class="image-red">
+                </a>
+                <a href="https://wa.me/+59163701686?text=Hola" target="_blank">
+                    <img src="./assets/redes/whatsapp.png" alt="whatsapp" class="image-red">
+                </a>
+                <a href="https://www.instagram.com/b4rc0d37/" target="_blank">
+                    <img src="./assets/redes/instagram.png" alt="instagram" class="image-red">
+                </a>
+                <a href="https://twitter.com/dmmslslsls" target="_blank">
+                    <img src="./assets/redes/twitter.png" alt="twitter" class="image-red">
                 </a>
             </div>
-            <button class="btn-download-cv">
-                <a download="CV_Aldo" href="../assets/CV-AldoTorrez.pdf">Descargar CV</a>
-            </button>
+            <form action="https://formspree.io/f/mdorddvq" method="POST" target="_blank">
+                <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+                <input type="text" name="email" placeholder="Ingrese su email" required>
+                <textarea name="mensaje" placeholder="Ingrese su mensage" required></textarea>
+                <button type="submit" class="enviar">Enviar</button>
+            </form>
         </div>
-        <form action="https://formspree.io/f/mdorddvq" method="POST" target="_blank">
-            <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
-            <input type="text" name="email" placeholder="Ingrese su email" required>
-            <textarea name="mensaje" placeholder="Ingrese su mensage" required></textarea>
-            <button type="submit" class="enviar">Enviar</button>
-        </form>
-        <p class="copyright">• Copyright ©2023 | Barcoder | All rights reserved</p>
     </div>
+    <div class="hr"></div>
+    <p>&copy; 2023 Aldo Torrez. Todos los derechos reservados.</p>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

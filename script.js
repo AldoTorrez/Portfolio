@@ -1,22 +1,18 @@
-const imageSkills = ["../assets/html-5.png", "../assets/css-3.png", "../assets/js.png", "../assets/jquery.png", "../assets/react.png", "../assets/redux.png", "../assets/node.png", "../assets/express.png", "../assets/postgress.png", "../assets/sequelize.png", "../assets/git.png", "../assets/github.png", "../assets/c++.png"]
-const textSkills = ["HTML5", "CSS3", "JavaScript", "jQuery", "React", "Redux", "NodeJS", "Express", "PostgreSQL", "Sequelize", "Git", "GitHub", "C++"]
+$(document).ready(function () {
+    // Añade un evento de clic a todos los enlaces del nav
+    $('nav a').on('click', function (event) {
+      // Previene el comportamiento predeterminado del enlace
+      event.preventDefault();
 
-const cardSkills = document.querySelector('.container-card-tecnologias-find')
+      // Obtiene el atributo href del enlace
+      var target = $(this).attr('href');
 
-imageSkills.map((img, index)=>{
-    let imgCard = document.createElement('img')
-    let divCard = document.createElement('div')
-    let pCard = document.createElement('p')
+      // Obtiene la posición del elemento de destino
+      var targetPosition = $(target).offset().top;
 
-    imgCard.setAttribute('src', img)
-    imgCard.setAttribute('alt', textSkills[index])
-    
-    imgCard.classList.add('tecnologias-image')
-    divCard.classList.add('container-card-tecnologias')
-    pCard.classList.add('tecnologias-text')
-    pCard.textContent = textSkills[index]
-    
-    divCard.appendChild(imgCard)
-    divCard.appendChild(pCard)
-    cardSkills.appendChild(divCard)
-})
+      // Realiza un desplazamiento suave a la posición del elemento de destino
+      $('html, body').animate({
+        scrollTop: targetPosition
+      }, 50);
+    });
+  });
