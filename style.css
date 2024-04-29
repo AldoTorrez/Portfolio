@@ -67,6 +67,7 @@ a{
     width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: 450px;
 }
 .container-about-me-element{
     width: 800px;
@@ -180,6 +181,22 @@ a{
 }
 .btn-project a:hover{
     background-color: rgb(244, 245, 245);
+}
+
+/* Codigo Css de certificados */
+.certificates-container{
+    width: 90%;
+    padding-top: 80px;
+}
+.certificates-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    justify-self: center;
+}
+.certificates-cards img{
+    width: 290px;
+    border-radius: 10px;
 }
 
 footer{
