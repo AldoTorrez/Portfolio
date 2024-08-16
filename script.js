@@ -16,3 +16,14 @@ $(document).ready(function () {
       }, 50);
     });
   });
+
+  const desplegarMenu = ()=>{
+    let menu = document.querySelector(".container-section")
+    if(menu.style.display === "flex"){
+      menu.style.display = "none"
+    }
+    else{
+      menu.style.backgroundColor = "black"
+      menu.style.display = "flex"
+    }
+  }
