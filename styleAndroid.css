@@ -37,7 +37,7 @@
     .container-about-me{
         padding-top: 50px;
         width: 380px;
-        height: 950px;
+        height: 1030px;
         display: flex;
         flex-direction: column;
     }
@@ -66,5 +66,30 @@
     .download-cv a{
         margin-left: 0px;
         margin-bottom: 20px;
+    }
+
+    .container-tech{
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 10px 0px 10px;
+    }
+    .container-tech-languajes-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+    }
+
+    .container-projects{
+        width: 380px;
+        padding: 10px;
+    }
+    .container-projects-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        width: 380px;
+        padding: 10px;
     }
 }
