@@ -1,0 +1,70 @@
+@media (max-width: 412px){
+    body{
+        margin: 0px;
+        padding: 0px;
+        display: block;
+    }
+    .container-nav{
+        width: 380px;
+        height: 50px;
+    }
+    .container-log{
+        height: 50px;
+    }
+    .container-section{
+        position: absolute;
+        margin-top: 400px;
+        background-color: red;
+        display: none;
+    }
+    .menu{
+        width: 30px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        margin: 10px;
+    }
+    .menu div{
+        width: 25px;
+        height: 2px;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .container-about-me{
+        padding-top: 50px;
+        width: 380px;
+        height: 950px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-about-me-element{
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-about-me-element h1{
+        font-size: 35px;
+        padding: 0px 10px 0px 10px;
+        margin-bottom: -5px;
+    }
+    .container-about-me-element h2{
+        font-size: 30px;
+        padding: 0px 10px 0px 10px;
+        margin-bottom: -5px;
+    }
+    .container-about-me-element p{
+        font-size: 15px;
+        padding: 0px 10px 0px 10px;
+        margin-bottom: -5px;
+    }
+    .download-cv a{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+}
