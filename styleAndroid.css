@@ -13,15 +13,20 @@
     }
     .container-section{
         position: absolute;
+        top: 0px;
+        left: 0px;
         padding: 0px;
-        margin-top: 260px;
+        margin: 0px;
+        height: 0px;
+        width: 0px;
         background-color: red;
-        display: none;
-        height: 300px;
-        width: 360px;
         flex-direction: column;
         justify-content: center;
         align-items: start;
+        transition: height 1s ease;
+    }
+    .container-section li{
+        opacity: 0;
     }
     .menu{
         width: 30px;
