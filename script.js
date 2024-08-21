@@ -19,21 +19,24 @@ $(document).ready(function () {
 
   const desplegarMenu = ()=>{
     let menu = document.querySelector(".container-section")
-    let menu2 = document.querySelector("#menu2")
-    let menu3 = document.querySelector("#menu3")
-    let lis = document.querySelector(".container-section li")
-    if(menu.style.width !== "0px"){
-      menu.style.width = "0px"
-      menu.style.height = "0px"
-      menu2.style.width = "25px"
-      menu3.style.width = "25px"
+    if(menu.style.display === "flex"){
+      menu.style.display = "none"
     }
     else{
-      lis.style.opacity = "1"
-      menu.style.backgroundColor = "black"
-      menu.style.width = "360px"
-      menu.style.height = "300px"
-      menu2.style.width = "20px"
-      menu3.style.width = "10px"
+      menu.style.display = "flex"
     }
+  }
+  const clickInicio = ()=>{
+    desplegarMenu()
+  }
+
+  const clickTech = ()=>{
+    desplegarMenu()
+  }
+
+  const clickProject = ()=>{
+    desplegarMenu()
+  }
+  const clickContact = ()=>{
+    desplegarMenu()
   }
