@@ -1,42 +1,42 @@
-$(document).ready(function () {
-    // Añade un evento de clic a todos los enlaces del nav
-    $('nav a').on('click', function (event) {
-      // Previene el comportamiento predeterminado del enlace
-      event.preventDefault();
+const desplegarMenu = ()=>{
+  let menu = document.querySelector(".container-section")
+  menu.style.display === "flex"? menu.style.display = "none": menu.style.display = "flex"
+}
 
-      // Obtiene el atributo href del enlace
-      var target = $(this).attr('href');
+const figure1 = document.querySelector("#one")
+const figure2 = document.querySelector("#two")
+const figure3 = document.querySelector("#three")
+const figure4 = document.querySelector("#four")
+const figure5 = document.querySelector("#five")
 
-      // Obtiene la posición del elemento de destino
-      var targetPosition = $(target).offset().top;
+setInterval(() => {
+  figure1.style.borderRadius = `${Math.random() * 100}% ${Math.random() * 100}% ${Math.random() * 100}% ${Math.random() * 100}%`
+  figure1.style.width = `${Math.random()*300}px`
+  figure1.style.height = `${Math.random()*300}px`
+  figure1.style.top = `${Math.random()*50}%`
+  figure1.style.left = `${Math.random()*50}%`
 
-      // Realiza un desplazamiento suave a la posición del elemento de destino
-      $('html, body').animate({
-        scrollTop: targetPosition
-      }, 50);
-    });
-  });
+  figure2.style.borderRadius = `${Math.random() * 100}% ${Math.random() * 100}% ${Math.random() * 100}% ${Math.random() * 100}%`
+  figure2.style.width = `${Math.random()*300}px`
+  figure2.style.height = `${Math.random()*300}px`
+  figure2.style.top = `${Math.random()*100}%`
+  figure2.style.left = `${Math.random()*50}%`
 
-  const desplegarMenu = ()=>{
-    let menu = document.querySelector(".container-section")
-    if(menu.style.display === "flex"){
-      menu.style.display = "none"
-    }
-    else{
-      menu.style.display = "flex"
-    }
-  }
-  const clickInicio = ()=>{
-    desplegarMenu()
-  }
+  figure3.style.borderRadius = `${Math.random() * 100}% ${Math.random() * 100}% ${Math.random() * 100}% ${Math.random() * 100}%`
+  figure3.style.width = `${Math.random()*300}px`
+  figure3.style.height = `${Math.random()*300}px`
+  figure3.style.top = `${Math.random()*100}%`
+  figure3.style.left = `${Math.random()*80}%`
 
-  const clickTech = ()=>{
-    desplegarMenu()
-  }
+  figure4.style.borderRadius = `${Math.random() * 100}% ${Math.random() * 100}% ${Math.random() * 100}% ${Math.random() * 100}%`
+  figure4.style.width = `${Math.random()*300}px`
+  figure4.style.height = `${Math.random()*300}px`
+  figure4.style.top = `${Math.random()*100}%`
+  figure4.style.left = `${Math.random()*100}%`
 
-  const clickProject = ()=>{
-    desplegarMenu()
-  }
-  const clickContact = ()=>{
-    desplegarMenu()
-  }
+  figure5.style.borderRadius = `${Math.random() * 100}% ${Math.random() * 100}% ${Math.random() * 100}% ${Math.random() * 100}%`
+  figure5.style.width = `${Math.random()*300}px`
+  figure5.style.height = `${Math.random()*300}px`
+  figure5.style.top = `${Math.random()*100}%`
+  figure5.style.left = `${Math.random()*50}%`
+}, 1000);

@@ -11,7 +11,7 @@
     <nav class="container-nav">
         <img src="./assets/logo.png" alt="logo" class="container-log">
         <ul class="container-section">              
-            <li><a href="#inicio" onclick="clickInicio()">
+            <li><a href="#inicio">
                     <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75024 19.2502H17.2502C18.3548 19.2502 19.2502 18.3548 19.2502 17.2502V9.75025L12.0002 4.75024L4.75024 9.75025V17.2502C4.75024 18.3548 5.64568 19.2502 6.75024 19.2502Z"></path>
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.74963 15.7493C9.74963 14.6447 10.6451 13.7493 11.7496 13.7493H12.2496C13.3542 13.7493 14.2496 14.6447 14.2496 15.7493V19.2493H9.74963V15.7493Z"></path>
@@ -19,7 +19,7 @@
                     Inicio
                 </a>
             </li>
-            <li><a href="#tecnologias" onclick="clickTech()">
+            <li><a href="#tecnologias">
                 <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <rect width="14.5" height="14.5" x="4.75" y="4.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" rx="2"></rect>
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.75 10.75L11.25 13L8.75 15.25"></path>
@@ -27,7 +27,7 @@
                 Tecnologias
                 </a>
             </li>                         
-            <li><a href="#proyectos" onclick="clickProject()">
+            <li><a href="#proyectos">
                     <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 17.25V9.75C19.25 8.64543 18.3546 7.75 17.25 7.75H4.75V17.25C4.75 18.3546 5.64543 19.25 6.75 19.25H17.25C18.3546 19.25 19.25 18.3546 19.25 17.25Z"></path>
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.5 7.5L12.5685 5.7923C12.2181 5.14977 11.5446 4.75 10.8127 4.75H6.75C5.64543 4.75 4.75 5.64543 4.75 6.75V11"></path>
@@ -35,7 +35,7 @@
                     Proyectos
                 </a>
             </li>
-            <li><a href="#contacto" onclick="clickContact()">
+            <li><a href="#contacto">
                     <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z"></path>
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z"></path>
@@ -104,10 +104,6 @@
                 <div>
                     <img src="./assets/redux.png" alt="redux" class=" image-languaje">
                     <p>Redux</p>
-                </div>
-                <div>
-                    <img src="./assets/angular.png" alt="angular" class="image-languaje">
-                    <p>Angular</p>
                 </div>
                 <div>
                     <img src="./assets/node.png" alt="node" class="image-languaje">
@@ -210,7 +206,12 @@
         </div>
         <p class="copy">&copy; 2023 Aldo Torrez. Todos los derechos reservados.</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <div class="container_figure"></div>
+    <div class="figure" id="one"></div>
+    <div class="figure" id="two"></div>
+    <div class="figure" id="three"></div>
+    <div class="figure" id="four"></div>
+    <div class="figure" id="five"></div>
     <script src="script.js"></script>
 </body>
 </html>
